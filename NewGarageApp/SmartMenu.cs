@@ -42,6 +42,8 @@ namespace NewGarageApp
         {
             CountParkingMoney parkingMoney = new CountParkingMoney();
             parkingMoney.Paid();
+            Console.WriteLine("Good Luck!");
+
         }
 
         public static void Menu()
