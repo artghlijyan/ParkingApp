@@ -53,18 +53,16 @@ namespace NewGarageApp.Camera_
         {
             return car.brand == camera.brand &&
                    car.licenseNumber == camera.licenseNumber &&
-                   car.color == camera.color &&
-                   Car.Entrance == Camera.Entrance &&
-                   Car.Exit == Camera.Exit;
+                   car.color == camera.color;
+                 
         }
 
         public static bool operator !=(Car car, Camera camera)
         {
             return car.brand != camera.brand ||
                    car.licenseNumber != camera.licenseNumber ||
-                   car.color != camera.color &&
-                   Car.Entrance == Camera.Entrance &&
-                   Car.Exit == Camera.Exit; ;
+                   car.color != camera.color;
+                 
         }
     }
 }
