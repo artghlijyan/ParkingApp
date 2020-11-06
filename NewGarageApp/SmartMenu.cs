@@ -76,7 +76,7 @@ namespace NewGarageApp
             string license = Console.ReadLine();
             Console.WriteLine("Please enter your car color ");
             string color = Console.ReadLine();            
-            car = new Car(brand, license, color, entrenceTime, exitTime);
+            car = new Car(brand, license, color);
         }
     }
 }
