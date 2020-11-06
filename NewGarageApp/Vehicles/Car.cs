@@ -6,17 +6,13 @@ namespace NewGarageApp.Vehicles
     {
         public string brand;
         public string licenseNumber;
-        public string color;
-        public static DateTime Entrance;
-        public static DateTime Exit;
+        public string color;        
 
-        public Car(string brand, string licenseNumber, string color, DateTime entrance, DateTime exit)
+        public Car(string brand, string licenseNumber, string color)
         {
             this.brand = brand;
             this.licenseNumber = licenseNumber;
-            this.color = color;
-            Entrance = entrance;
-            Exit = exit;
+            this.color = color;           
         }
 
         public Car() { }
@@ -26,9 +22,8 @@ namespace NewGarageApp.Vehicles
             return
                    $"Car's brand  {brand}\n" +
                    $"Car's license number  {licenseNumber}\n" +
-                   $"Car's color {color}\n" +
-                   $"Car entrance at  {Entrance}\n" +
-                   $"Car exit at  {Exit}\n";
+                   $"Car's color {color}\n";
+                  
         }
     }
 }
