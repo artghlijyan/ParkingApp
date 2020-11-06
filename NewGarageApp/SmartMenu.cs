@@ -75,11 +75,7 @@ namespace NewGarageApp
             Console.WriteLine("Please enter your car license number ");
             string license = Console.ReadLine();
             Console.WriteLine("Please enter your car color ");
-            string color = Console.ReadLine();
-            Console.WriteLine("Please enter entrence time");
-            DateTime entrenceTime = DateTime.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter exit time");
-            DateTime exitTime = DateTime.Parse(Console.ReadLine());
+            string color = Console.ReadLine();            
             car = new Car(brand, license, color, entrenceTime, exitTime);
         }
     }
