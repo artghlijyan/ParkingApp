@@ -1,11 +1,11 @@
 ﻿namespace NewGarageApp.Park
 {
-    class SpaceForPark
+    class ParkSpace
     {
         private int parkingLength = 5;
         private int parkingWidth = 3;
 
-        public SpaceForPark()
+        public ParkSpace()
         {
             AllPark.busySpaceCount++;
         }

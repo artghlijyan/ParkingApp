@@ -18,7 +18,9 @@ namespace NewGarageApp.Camera_
         {
             ChangeMoney = money;
         }
+
         public CountParkingMoney() { }
+
         public int Price
         {
             get
@@ -27,7 +29,7 @@ namespace NewGarageApp.Camera_
             }
         }
 
-        public void Paid()
+        public void Pay()
         {
             Console.WriteLine("Which country money would you like to pay?\n1.AMD\n2.USD\n3.RUB");
             int countryMoney = int.Parse(Console.ReadLine());

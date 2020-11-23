@@ -8,11 +8,8 @@ namespace NewGarageApp
     class SmartMenu
     {
         private static AllPark park;
-
         private static Camera camera;
-
         private static Car car;
-
 
         public void Table()
         {
@@ -21,7 +18,7 @@ namespace NewGarageApp
             int row = int.Parse(Console.ReadLine());
             Console.Write($"Please enter the column ");
             int column = int.Parse(Console.ReadLine());
-            park[row, column] = new SpaceForPark();
+            park[row, column] = new ParkSpace();
             AllPark.ParkTable();
         }
 
@@ -41,7 +38,7 @@ namespace NewGarageApp
         public static void Terminal()
         {
             CountParkingMoney parkingMoney = new CountParkingMoney();
-            parkingMoney.Paid();
+            parkingMoney.Pay();
             Console.WriteLine("Good Luck!");
 
         }

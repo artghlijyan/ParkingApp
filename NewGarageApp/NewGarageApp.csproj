@@ -46,7 +46,7 @@
     <Compile Include="Camera_\Camera.cs" />
     <Compile Include="Camera_\CountParkingMoney.cs" />
     <Compile Include="Park\AllPark.cs" />
-    <Compile Include="Park\SpaceForPark.cs" />
+    <Compile Include="Park\ParkSpace.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmartMenu.cs" />

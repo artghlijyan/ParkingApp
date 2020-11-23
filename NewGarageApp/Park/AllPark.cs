@@ -4,15 +4,15 @@ namespace NewGarageApp.Park
 {
     class AllPark
     {
-        public static int totalSpace = 20;
+        public static readonly int generalSpace = 20;
         public static int busySpaceCount;
 
-        SpaceForPark[,] space;
+        ParkSpace[,] space;
         static int[,] parkMap = new int[4, 5];
 
         public AllPark()
         {
-            space = new SpaceForPark[4, 5];
+            space = new ParkSpace[4, 5];
         }
 
         static bool Free(int r, int c)
@@ -28,7 +28,7 @@ namespace NewGarageApp.Park
             }
         }
 
-        public SpaceForPark this[int row, int column]
+        public ParkSpace this[int row, int column]
         {
             get
             {
@@ -71,7 +71,7 @@ namespace NewGarageApp.Park
 
         public override string ToString()
         {
-            return $"Park total space is {totalSpace} (3 row,4 column)\n" +
+            return $"Park total space is {generalSpace} (3 row,4 column)\n" +
                    $"Now busy space count is {busySpaceCount}\n\n" +
                    $"Where would you like to book?";
         }
